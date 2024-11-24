@@ -73,17 +73,17 @@ SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "54a4022646a840057428d78
 # 12hr = 43200
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', "300")) # Add time in seconds
 #Tutorial video for the user of your shortner on how to download.
-TUT_VID = os.environ.get("TUT_VID","")
+TUT_VID = os.environ.get("TUT_VID","https://t.me/Tutorial_society")
 
 #Payment to remove the token system
 #put TRUE if you want this feature
-USE_PAYMENT = True if (os.environ.get("USE_PAYMENT", "FALSE") == "TRUE") & (USE_SHORTLINK) else False
+USE_PAYMENT = True if (os.environ.get("USE_PAYMENT", "TRUE") == "TRUE") & (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", " ")
+UPI_ID = os.environ.get("UPI_ID", "umaididrisi@fam")
 #UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "")
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://envs.sh/KNz.jpg")
 #SCREENSHOT URL of ADMIN for verification of payments
-SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", "")
+SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", "https://t.me/+r0hwjuqvYgdiNGJl")
 #Time and its price
 #7 Days
 PRICE1 = os.environ.get("PRICE1", "30 rs")
@@ -115,7 +115,7 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 
 #no need to add anything from now on
 
-ADMINS = []
+ADMINS = [5585016974]
 ADMINS.append(OWNER_ID)
 
 LOG_FILE_NAME = "logs.txt"
